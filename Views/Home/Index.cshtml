@@ -1,0 +1,31 @@
+﻿
+@model Survey
+
+<form action ="Add" method="post">
+    <div class="form-group">
+        <label for ="Name">Your Name:</label>
+        <input type = "text" name ="Name">
+    </div>
+    <div class="form-group">    
+        <label for ="Location">Location</label>
+        <input type = "text" name ="Location">
+    
+    <div class="form-group">
+        <label for ="Language">Favorite Language</label>
+        <input type = "text" name ="Language">
+    </div>
+     <div class="form-group">
+        <label for ="Comment">Comment</label>
+        <input type = "text" name ="Comment">
+    </div>
+
+    <h3>Name: @ViewBag.Name</h3>
+    <h3>Location: @ViewBag.Location</h3>
+    <h3>Favorite Language: @ViewBag.Language</h3>
+    <h3>Comment: @ViewBag.Comment</h3>
+
+
+
+
+    <input type="submit" value="Submit" class = "btn-btn-primary">
+</form>
